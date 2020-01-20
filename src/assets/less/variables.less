@@ -1,10 +1,11 @@
 // Define variable here
 
-@df-fs: 18;
+@df-fs: 16;
 @mobi-fs: 16;
 @screen-mobile: 575px;
 @screen-mw-desktop: (@screen-mobile + 1);
 @c-white: #FFFFFF;
+@c-background: #e3e5e4;
 @c-soft-grey: #999999;
 @c-dark-grey: #808285;
 @c-light-grey: #979797;
@@ -12,15 +13,14 @@
 @c-light-soft-grey: #e2e2e3;
 @c-blue-light: #E4F8FF;
 @c-space-grey: #96989B;
+@c-purple-blue: #011f5b;
 @c-blue: #004A7A;
 @c-soft-blue: #128AD8;
 @c-dark-blue: #07334F;
 @c-soft-orange: #FF7813;
 @c-orange: #FF6124;
 .container {
-  max-width: unit(1146/@df-fs, rem);
-  padding-left: unit(15/@df-fs, rem);
-  padding-right: unit(15/@df-fs, rem);
+  max-width: unit(1000/@df-fs, rem);
   @media (max-width: @screen-mobile) {
     max-width: 100%;
     padding-left: unit(10/@mobi-fs, rem);
@@ -176,7 +176,3 @@ button[aria-expanded=true] .icon-menu {
 button[aria-expanded=false] .icon-angle-up {
   display: none;
 }
-
-//.navbar-collapse a[aria-expanded=true] {
-//  color :red;
-//}
