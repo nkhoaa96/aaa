@@ -45,11 +45,13 @@ body {
     .prev-slide {
       position: absolute;
       top: unit(290/@df-fs, rem);
+      .width(30);
     }
 
     .next-slide {
       position: absolute;
       top: unit(290/@df-fs, rem);
+      .width(30);
       right: 0;
     }
 
@@ -260,6 +262,7 @@ header {
     .img-move {
       z-index: 1996;
       position: absolute;
+      .width(158);
       left: unit(812/@df-fs, rem);
       top: unit(110/@df-fs, rem);
     }
@@ -390,7 +393,11 @@ header {
         padding-bottom: unit(15/@df-fs, rem);
 
         .icon-arrow {
+          .width(30);
           margin-left: unit(20/@df-fs, rem);
+          img {
+            max-width: 100%;
+          }
         }
 
         .btn-shape {
@@ -453,7 +460,7 @@ header {
 footer{
   background: #ffffff;
   color: #00355f;
-  padding-bottom: unit(184/@df-fs, rem);
+  //padding-bottom: unit(20/@df-fs, rem);
   .footer-wrap{
     background: #e3e5e4;
     text-align: center;
