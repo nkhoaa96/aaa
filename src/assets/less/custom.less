@@ -68,7 +68,44 @@ header {
     .font-size(18);
     margin-left: unit(-15/@df-fs, rem);
     margin-right: unit(-15/@df-fs, rem);
-    .padding-2(30, 0)
+    padding-top: unit(43/@df-fs, rem);
+    padding-bottom: unit(37/@df-fs, rem);
+    font-weight: 500;
+    .brand-logo {
+      position: absolute;
+      .width(223);
+      top: unit(-13/@df-fs, rem);
+    }
+    .brand-content {
+      position: absolute;
+      margin-left: unit(291/@df-fs, rem);
+      line-height: 1.2;
+      .width(236);
+      top: unit(-13/@df-fs, rem);
+      &:before {
+        content: '';
+        background: @c-purple-blue;
+        position: absolute;
+        left: unit(-30/@df-fs, rem);
+        width: unit(4/@df-fs, rem);
+        top: unit(10/@df-fs, rem);
+        height: unit(41/@df-fs, rem);
+        display: block;
+      }
+    }
+    .brand-hotline {
+      position: absolute;
+      margin-left: unit(602/@df-fs, rem);
+      .width(194);
+      top: unit(10/@df-fs, rem);
+      span{
+        color: #c52127;
+        font-weight: 900;
+      }
+    }
+    .btn {
+      margin-left: unit(812/@df-fs, rem);
+    }
   }
 }
 
