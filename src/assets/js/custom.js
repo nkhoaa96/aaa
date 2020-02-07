@@ -3,12 +3,11 @@ $(document).ready(function(){
 
 
 
-    // $("#reg-btn").click(function() {
-    //     $(".img-move").addClass('display_none');
-    //     $('html,body').animate({
-    //             scrollTop: $(".section-register").offset().top},
-    //         'slow');
-    // });
+    $("#reg-btn").click(function() {
+        $('html,body').animate({
+                scrollTop: $(".register-form").offset().top},
+            'slow');
+    });
 
     $("#btn-reg-form").click(function() {
         var city = $('#city_input').val();

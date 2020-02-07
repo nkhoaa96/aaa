@@ -4,7 +4,7 @@
 module.exports = {
     LIVERELOAD_PORT: 35729,
     PORT: process.env.PORT || 1233,
-    HOSTNAME: process.env.IP || 'localhost', // use 0.0.0.0 to publish over network(without live load)
+    HOSTNAME: process.env.IP || '192.168.1.223', // use 0.0.0.0 to publish over network(without live load)
     /**
      * The `build_dir` folder is where our projects are compiled during
      * development and the `compile_dir` folder is where our app resides once it's
