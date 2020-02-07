@@ -1,5 +1,12 @@
 
 $(document).ready(function(){
+
+    $("#reg-btn").click(function() {
+        $('html,body').animate({
+                scrollTop: $(".section-register").offset().top},
+            'slow');
+    });
+
     var owls = $('.quote-carousel');
     owls.owlCarousel({
         loop:true,
