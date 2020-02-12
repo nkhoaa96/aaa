@@ -20,34 +20,34 @@ $(document).ready(function(){
         var position = $('#position_input').val();
         var time = $('#time_input').val();
 
-        // $.ajax({
-        //     url: "https://docs.google.com/forms/d/e/1FAIpQLSdJljvIGoZeCy5ygcQxydobfQsGVMFofLI6Dx0EgHsxY9SNcQ/formResponse",
-        //     data: {
-        //         "entry.1933655525": city,
-        //         "entry.687732027": 'Học sinh',
-        //         "entry.1038123465": name,
-        //         "entry.1158557545": phone,
-        //         "entry.122496775": email,
-        //         "entry.1833542224": dob,
-        //         "entry.949263201": school,
-        //         "entry.679562446.other_option_response": time,
-        //         "entry.679562446": '__other_option__',
-        //         "entry.1349331485.other_option_response": degree,
-        //         "entry.1349331485": '__other_option__',
-        //         "entry.606944087.other_option_response": position,
-        //         'entry.606944087': '__other_option__',
-        //         "entry.325236156": 'Website AAE Vietnam',
-        //         'fvv': 1,
-        //     },
-        //     crossDomain : true,
-        //     type: "POST",
-        //     dataType: "xml",
-        //     statusCode: {
-        //         200: function () {
-        //             console.log('success');
-        //         }
-        //     }
-        // });
+        $.ajax({
+            url: "https://docs.google.com/forms/d/e/1FAIpQLSdJljvIGoZeCy5ygcQxydobfQsGVMFofLI6Dx0EgHsxY9SNcQ/formResponse",
+            data: {
+                "entry.1933655525": city,
+                "entry.687732027": 'Học sinh',
+                "entry.1038123465": name,
+                "entry.1158557545": phone,
+                "entry.122496775": email,
+                "entry.1833542224": dob,
+                "entry.949263201": school,
+                "entry.679562446.other_option_response": time,
+                "entry.679562446": '__other_option__',
+                "entry.1349331485.other_option_response": degree,
+                "entry.1349331485": '__other_option__',
+                "entry.606944087.other_option_response": position,
+                'entry.606944087': '__other_option__',
+                "entry.325236156": 'Website AAE Vietnam',
+                'fvv': 1,
+            },
+            crossDomain : true,
+            type: "POST",
+            dataType: "xml",
+            statusCode: {
+                200: function () {
+                    console.log('success');
+                }
+            }
+        });
         $("#ex1").modal({
             fadeDuration: 100
         });

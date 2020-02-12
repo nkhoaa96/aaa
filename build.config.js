@@ -86,7 +86,7 @@ module.exports = {
             'node_modules/jquery/dist/jquery.min.js',
             'node_modules/bootstrap/dist/js/bootstrap.min.js',
             'node_modules/jquery-modal/jquery.modal.js',
-            'node_modules/owl.carousel/dist/owl.carousel.min.js'
+            'node_modules/owl.carousel/dist/owl.carousel.min.js',
         ],
         css: [
             'node_modules/bootstrap/dist/css/bootstrap.min.css',
