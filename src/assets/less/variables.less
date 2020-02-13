@@ -20,11 +20,17 @@
 @c-soft-orange: #FF7813;
 @c-orange: #FF6124;
 .container {
-  max-width: unit(1000/@df-fs, rem);
-  @media (max-width: @screen-mobile) {
-    max-width: 100%;
-    padding-left: unit(10/@mobi-fs, rem);
-    padding-right: unit(10/@mobi-fs, rem);
+  float: none;
+  display: block;
+  position: initial;
+  left: initial;
+  &.aae-custom {
+    max-width: unit(1000/@df-fs, rem);
+    @media (max-width: @screen-mobile) {
+      max-width: 100%;
+      padding-left: unit(10/@mobi-fs, rem);
+      padding-right: unit(10/@mobi-fs, rem);
+    }
   }
 }
 .row {
@@ -196,6 +202,7 @@ button[aria-expanded=false] .icon-angle-up {
 #ex1 {
   height: fit-content;
   color: @c-purple-blue;
+  top: 11%;
   font-size: unit(24/@df-fs, rem);
   span{
     color :#c52127;
